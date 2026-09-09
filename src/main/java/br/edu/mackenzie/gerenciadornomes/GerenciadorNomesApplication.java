@@ -23,7 +23,7 @@ public class GerenciadorNomesApplication implements CommandLineRunner {
     @Override
     public void run(String... args) {
         
-        String arquivoEntrada = "access_grande.log";
+        String arquivoEntrada = "access_exemplo.log";
         String arquivoSaida = "relatorio.txt";
 
         ManipuladorArquivo manipulador = new ManipuladorArquivo();
