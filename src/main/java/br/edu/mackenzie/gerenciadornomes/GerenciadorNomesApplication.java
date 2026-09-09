@@ -1,4 +1,11 @@
+package br.edu.mackenzie.gerenciadornomes;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 import java.io.IOException;
+// Import de Banco de Dados JDBC
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -6,10 +13,16 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AnaliseLogs {
+@SpringBootApplication
+public class GerenciadorNomesApplication implements CommandLineRunner {
 
     public static void main(String[] args) {
+        SpringApplication.run(GerenciadorNomesApplication.class, args);
+    }
 
+    @Override
+    public void run(String... args) {
+        
         String arquivoEntrada = "access_grande.log";
         String arquivoSaida = "relatorio.txt";
 

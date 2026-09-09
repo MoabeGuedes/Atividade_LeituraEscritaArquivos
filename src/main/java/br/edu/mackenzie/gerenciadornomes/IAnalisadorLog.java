@@ -1,3 +1,4 @@
+package br.edu.mackenzie.gerenciadornomes;
 import java.util.List;
 
 public interface IAnalisadorLog {
