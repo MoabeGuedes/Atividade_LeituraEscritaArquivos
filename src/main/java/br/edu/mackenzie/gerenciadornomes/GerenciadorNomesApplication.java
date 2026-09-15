@@ -22,7 +22,7 @@ public class GerenciadorNomesApplication implements CommandLineRunner {
         // Conexao com banco de dados
         String url = "jdbc:postgresql://aws-0-us-east-2.pooler.supabase.com:5432/postgres";
         String usuario = "postgres.oczlafqaklrwuhdtvxgr";
-        String senha = "Programacao@26";
+        String senha = System.getenv("DB_PASSWORD");
 
 
         try (Connection connection =
